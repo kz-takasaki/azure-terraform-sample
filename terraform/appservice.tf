@@ -6,6 +6,7 @@ resource "azurerm_linux_web_app" "backend" {
   service_plan_id     = azurerm_service_plan.backend.id
   site_config {
     ftps_state = "FtpsOnly"
+    always_on  = false
   }
   app_settings = {
     "ENV" = "dev"
