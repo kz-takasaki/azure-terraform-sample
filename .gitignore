@@ -24,3 +24,7 @@ env/local.env
 # vim temporary files
 *~
 .*.sw?
+
+# terraform
+.terraform
+.terraform.lock.hcl
