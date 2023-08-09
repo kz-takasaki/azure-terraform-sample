@@ -10,11 +10,6 @@ packages = [{include = "fastapi_sample"}]
 python = "^3.11"
 fastapi = "^0.96.0"
 uvicorn = "^0.22.0"
-langchain = "^0.0.231"
-openai = "^0.27.7"
-azure-cosmos = "^4.4.0"
-tiktoken = "^0.4.0"
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
