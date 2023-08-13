@@ -28,7 +28,7 @@ jobs:
 
       - name: Terraform Init
         working-directory: terraform
-        run: terraform init
+        run: terraform init -lock-timeout=180s
 
       - name: Terraform Format
         working-directory: terraform
@@ -36,4 +36,4 @@ jobs:
 
       - name: Terraform Plan
         working-directory: terraform
-        run: terraform plan
+        run: terraform plan -lock-timeout=180s
